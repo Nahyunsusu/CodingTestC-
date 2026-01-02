@@ -1,0 +1,19 @@
+using System;
+using System.Collections.Generic;
+
+public class Solution
+{
+    public int[] solution(int[] num_list)
+    {
+        List<int> temp = new List<int>();
+
+        Array.Sort(num_list);
+
+        for(int i=5;i<num_list.Length;i++)
+        {
+            temp.Add(num_list[i]);
+        }
+
+        return temp.ToArray();
+    }
+}
